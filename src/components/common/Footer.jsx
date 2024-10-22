@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/Loogoo1.webp';
 import DBC from '../../assets/dbc_footer.jpg';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-10">
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Newsletter Section */}
           <div className="mb-8 md:mb-0 md:mr-12">
           <div class="flex flex-col md:flex-col lg:flex-row items-center gap-y-4 lg:gap-x-8 p-4">
-           <img src={DBC} alt="DilBahar Masala" class="h-20 w-auto" />
+          <img src={DBC} alt="DilBahar Masala" class="h-20 w-auto" />
             <span class="text-base font-sans text-left max-w-[22rem] leading-relaxed">
               Subscribe to our newsletter for the latest updates on new features and product releases.
             </span>
@@ -40,40 +41,40 @@ const Footer = () => {
             <div className="mb-4 md:mb-0">
               <strong className="text-lg font-bold mb-2">Company</strong>
               <div className="flex flex-col space-y-1">
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <Link to="/" className="text-sm text-gray-700 hover:underline">
                   Home
-                </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
-                  About Us
-                </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                </Link>
+                <Link to="/products" className="text-sm text-gray-700 hover:underline">
                   Products
-                </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
-                  Contact Us
-                </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
-                  FAQs
-                </a>
+                </Link>
+                <Link to="/recipes" className="text-sm text-gray-700 hover:underline">
+                  Recipes
+                </Link>
+                <Link to="/about" className="text-sm text-gray-700 hover:underline">
+                  About
+                </Link>
+                <Link to="/contact" className="text-sm text-gray-700 hover:underline">
+                  Contact
+                </Link>
               </div>
             </div>
             {/* Quick Links */}
             <div className="mb-4 md:mb-0">
               <strong className="text-lg font-bold mb-2">Quick Links</strong>
               <div className="flex flex-col space-y-1">
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <a href="#"  rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
                   Terms of Service
                 </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <a href="#"  rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
                   Privacy Policy
                 </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <a href="#"  rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
                   Cookie Policy
                 </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <a href="#"  rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
                   Career Opportunities
                 </a>
-                <a href="https://example.com" target="_blank" rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
+                <a href="#"  rel="noreferrer noopener" className="text-sm text-gray-700 hover:underline">
                   Blog
                 </a>
               </div>
@@ -84,7 +85,6 @@ const Footer = () => {
               <div className="flex flex-col space-y-4">
                 <a
                   href="https://facebook.com"
-                  target="_blank"
                   rel="noreferrer noopener"
                   className="flex items-center text-sm text-gray-700 hover:underline"
                 >
@@ -96,7 +96,6 @@ const Footer = () => {
                 </a>
                 <a
                   href="https://instagram.com"
-                  target="_blank"
                   rel="noreferrer noopener"
                   className="flex items-center text-sm text-gray-700 hover:underline"
                 >
@@ -108,7 +107,6 @@ const Footer = () => {
                 </a>
                 <a
                   href="https://twitter.com"
-                  target="_blank"
                   rel="noreferrer noopener"
                   className="flex items-center text-sm text-gray-700 hover:underline"
                 >
