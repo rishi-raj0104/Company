@@ -1,0 +1,267 @@
+export const recipesarr = [
+  {
+    category: "Breakfast Recipes",
+    recipes: [
+      {
+        title: "PAV BHAJI BOMB with PAV BHAJI MASALA",
+        date: "September 8, 2023",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+      },
+      {
+        title: "PAV BHAJI PULL APART with PAV BHAJI MASALA",
+        date: "September 8, 2023",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+      },
+      {
+        title: "Tandoori Cauliflower",
+        date: "September 16, 2021",
+        tags: ["Breakfast Recipes", "Tandoori Masala"]
+      },
+      {
+        title: "Chhole Canapés",
+        date: "September 16, 2021",
+        tags: ["Breakfast Recipes", "Chhole Masala"]
+      },
+      {
+        title: "Rajma Tacos",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Rajma Masala"]
+      },
+      {
+        title: "Jaljira",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Jaljira", "Lunch Recipes", "Quick Recipes"]
+      },
+      {
+        title: "Aloo Chaat",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Chaat Masala", "Quick Recipes"]
+      },
+      {
+        title: "Rasam Rice",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+      },
+      {
+        title: "Rasam",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+      },
+      {
+        title: "Tea Masala Cake",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Dessert Recipes", "Festive Recipes", "Tea Masala"]
+      },
+      {
+        title: "Sambar Rice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Idli Sambar",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Roasted Potatoes with Sambar Masala",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Watermelon Tomato Jaljira Juice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      },
+      {
+        title: "Grapes Jaljira Juice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      },
+      {
+        title: "Pineapple Jaljira Drink",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      },
+      {
+        title: "Sambhar",
+        date: "July 20, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Sambhar Masala"]
+      }
+    ]
+  },
+  {
+    category: "Quick Recipes",
+    recipes: [
+      {
+        title: "Instant Pot Masala Rice",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Lunch Recipes", "Quick Recipes", "Royal Garam Masala"]
+      },
+      {
+        title: "Steam Veg Momos",
+        date: "September 16, 2021",
+        tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+      },
+      {
+        title: "Fried Momos with Veg Cheese Fillings",
+        date: "September 16, 2021",
+        tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+      },
+      {
+        title: "Fruit Chaat",
+        date: "September 16, 2021",
+        tags: ["Chaat Masala", "Dessert Recipes", "Quick Recipes"]
+      },
+      {
+        title: "Chatpata Cone Chaat",
+        date: "September 16, 2021",
+        tags: ["Chaat Masala", "Dinner Recipes", "Lunch Recipes", "Quick Recipes"]
+      },
+      {
+        title: "Aam Panna Puchka",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Sukha Puri",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Churmur Chaat",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Paani Puri",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Jaljira",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Jaljira", "Lunch Recipes", "Quick Recipes"]
+      },
+      {
+        title: "Aloo Chaat",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Chaat Masala", "Quick Recipes"]
+      },
+      {
+        title: "Mausambi Pani Puri",
+        date: "September 15, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Momo Masala",
+        date: "September 15, 2021",
+        tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+      },
+      {
+        title: "Masala Milk Shake",
+        date: "September 15, 2021",
+        tags: ["Dessert Recipes", "Festive Recipes", "Kesari Milk Masala", "Quick Recipes"]
+      },
+      {
+        title: "Masala Chai",
+        date: "September 15, 2021",
+        tags: ["Quick Recipes", "Tea Masala"]
+      },
+      {
+        title: "Idli Sambar",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Roasted Potatoes with Sambar Masala",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Instant Pot Saffron Kheer",
+        date: "September 14, 2021",
+        tags: ["Dessert Recipes", "Festive Recipes", "Quick Recipes", "Saffron"]
+      },
+      {
+        title: "Watermelon Tomato Jaljira Juice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      },
+      {
+        title: "Grapes Jaljira Juice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      },
+      {
+        title: "Pineapple Jaljira Drink",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+      }
+    ]
+  },
+  {
+    category: "Dinner Recipes",
+    recipes: [
+      {
+        title: "PAV BHAJI BOMB with PAV BHAJI MASALA",
+        date: "September 8, 2023",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+      },
+      {
+        title: "PAV BHAJI PULL APART with PAV BHAJI MASALA",
+        date: "September 8, 2023",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+      },
+      {
+        title: "Rasam Rice",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+      },
+      {
+        title: "Rasam",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+      },
+      {
+        title: "Sambar Rice",
+        date: "September 14, 2021",
+        tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Sambhar Masala"]
+      },
+      {
+        title: "Chhole Canapés",
+        date: "September 16, 2021",
+        tags: ["Breakfast Recipes", "Chhole Masala"]
+      },
+      {
+        title: "Rajma Tacos",
+        date: "September 15, 2021",
+        tags: ["Breakfast Recipes", "Rajma Masala"]
+      },
+      {
+        title: "Aam Panna Puchka",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Sukha Puri",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Churmur Chaat",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Paani Puri",
+        date: "September 16, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      },
+      {
+        title: "Mausambi Pani Puri",
+        date: "September 15, 2021",
+        tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+      }
+    ]
+  }
+];

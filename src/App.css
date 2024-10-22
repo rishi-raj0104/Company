@@ -1,0 +1,6 @@
+/* In your CSS file (e.g., styles.css) */
+* {
+    @apply box-border; /* Tailwind utility for box-sizing */
+    border-width: 0; /* Default border width */
+    border-style: solid; /* Default border style */
+}

@@ -1,0 +1,417 @@
+const latestRecipes = [
+  {
+    date: "September 8, 2023",
+    title: "AMRITSARI CHHOLE with CHHOLE MASALA",
+    tags: ["Chhole Masala", "Dinner Recipes", "Lunch Recipes", "Veg Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "PESHAWARI CHHOLE with CHHOLE MASALA",
+    tags: ["Chhole Masala", "Veg Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "DHABA STYLE MIX VEGETABLE CURRY with GARAM MASALA",
+    tags: ["Dinner Recipes", "Garam Masala", "Lunch Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "RAJMA GALOUTI KEBAB with GARAM MASALA",
+    tags: ["Dinner Recipes", "Garam Masala", "Lunch Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "ALOO CHAAT TACOS with CHAAT MASALA",
+    tags: ["Chaat Masala"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "PALAK PAKORA CHAAT with CHAAT MASALA",
+    tags: ["Chaat Masala"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "PANI PURI SHOTS with PANI PURI MASALA",
+    tags: ["Pani Puri Masala"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "VEG AWADHI DUM BIRYANI with SHAHI BIRYANI MASALA",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "LAUKI KOFTA CURRY with KITCHEN KING MASALA",
+    tags: ["Dinner Recipes", "Kitchen King", "Lunch Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "METHI MALAI MATAR with KITCHEN KING MASALA",
+    tags: ["Dinner Recipes", "Kitchen King", "Lunch Recipes"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "PAV BHAJI BOMB with PAV BHAJI MASALA",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 8, 2023",
+    title: "PAV BHAJI PULL APART with PAV BHAJI MASALA",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 5, 2023",
+    title: "Aloo Shimla Mirch With Sabji Masala",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Sabji Masala Jar"]
+  },
+  {
+    date: "September 5, 2023",
+    title: "Bharva Bhindi With Sabji Masala",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Sabji Masala Jar"]
+  },
+  {
+    date: "September 5, 2023",
+    title: "Paneer Lababdar With Shahi Paneer Masala",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Shahi Paneer Masala"]
+  },
+  {
+    date: "September 5, 2023",
+    title: "Paneer Wrap With Shahi Paneer Masala",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Shahi Paneer Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Veggie Burger",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Royal Garam Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Instant Pot Masala Rice",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Quick Recipes", "Royal Garam Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Aloo Gobhi",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Royal Garam Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Kolhapuri Egg Curry",
+    tags: ["Dinner Recipes", "Egg Curry", "Lunch Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Egg Pallipalayam",
+    tags: ["Dinner Recipes", "Egg Curry", "Lunch Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Paneer Kathi Roll",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Shahi Paneer Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Badami Paneer Curry",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Paneer Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Tandoori Momos",
+    tags: ["Lunch Recipes", "Momo Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Steam Veg Momos",
+    tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Fried Momos with Veg Cheese Fillings",
+    tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Tandoori Cauliflower",
+    tags: ["Breakfast Recipes", "Tandoori Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Chana Pindi Recipe",
+    tags: ["Chhole Masala", "Dinner Recipes", "Lunch Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Chhole Canapés",
+    tags: ["Breakfast Recipes", "Chhole Masala"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Fruit Chaat",
+    tags: ["Chaat Masala", "Desserts Recipes", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Chatpata Cone Chaat",
+    tags: ["Chaat Masala", "Dinner Recipes", "Lunch Recipes", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Aam Panna Puchka",
+    tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Sukha Puri",
+    tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Churmur Chaat",
+    tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Paani Puri",
+    tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 16, 2021",
+    title: "Biryani Rice (Kuska Rice)",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Restaurant Style Vegetable Biryani",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Pav Bhaji Cutlets",
+    tags: ["Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Pav Bhaji Bruschetta Recipe Card",
+    tags: ["Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Punjabi Rajma Chawal",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Rajma Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Rajma Masala Khushbudar",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Rajma Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Rajma Tacos",
+    tags: ["Breakfast Recipes", "Rajma Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Paneer Hara Mirch Biryani",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Jaljira",
+    tags: ["Breakfast Recipes", "Jaljira", "Lunch Recipes", "Quick Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Aloo Chaat",
+    tags: ["Breakfast Recipes", "Chaat Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Hyderabadi Veg Biryani",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Vegetable Biryani",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Biryani Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Mausambi Pani Puri",
+    tags: ["Dinner Recipes", "Pani Puri Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Pav Bhaji Burger",
+    tags: ["Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Pav Bhaji Pizza",
+    tags: ["Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Pav Bhaji Masala",
+    tags: ["Lunch Recipes", "Pav Bhaji Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Dakhshini Chhole",
+    tags: ["Chhole Masala", "Dinner Recipes", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Chhole Dilli Wale",
+    tags: ["Chhole Masala", "Dinner Recipes", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Chhole Masala",
+    tags: ["Chhole Masala", "Dinner Recipes", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Mattar Paneer",
+    tags: ["Dinner Recipes", "Festive Recipes", "Kitchen King", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Momo Masala",
+    tags: ["Lunch Recipes", "Momo Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Kesar Kulfi",
+    tags: ["Dinner Recipes", "Kesari Milk Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Masala Milk Shake",
+    tags: ["Desserts Recipes", "Festive Recipes", "Kesari Milk Masala", "Quick Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Veg Kolhapuri",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Sabji Masala Jar"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Bhindi/Okra ki Sabji",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Sabji Masala Jar"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Mix Vegetable",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Sabji Masala Jar"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Rasam Rice",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Rasam",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Rasam Powder"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Aloo Matar Gravy",
+    tags: ["Dinner Recipes", "Kitchen King", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Paneer Bhurji",
+    tags: ["Dinner Recipes", "Festive Recipes", "Kitchen King", "Lunch Recipes"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Masala Chai",
+    tags: ["Quick Recipes", "Tea Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Tea Masala Cake",
+    tags: ["Breakfast Recipes", "Desserts Recipes", "Festive Recipes", "Tea Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Punjabi Samosa",
+    tags: ["Festive Recipes", "Garam Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Rajasthani Pyaaz Kachori",
+    tags: ["Festive Recipes", "Garam Masala"]
+  },
+  {
+    date: "September 15, 2021",
+    title: "Makai Galoutti Kebab",
+    tags: ["Festive Recipes", "Garam Masala", "Lunch Recipes"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Sambar Rice",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Sambhar Masala"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Idli Sambar",
+    tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Roasted Potatoes with Sambar Masala",
+    tags: ["Breakfast Recipes", "Lunch Recipes", "Quick Recipes", "Sambhar Masala"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Kesar Rasmalai",
+    tags: ["Desserts Recipes", "Festive Recipes", "Saffron"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Instant Pot Saffron Kheer",
+    tags: ["Desserts Recipes", "Festive Recipes", "Quick Recipes", "Saffron"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Kashmiri Pulao",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Saffron"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Watermelon Tomato Jaljira Juice",
+    tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Grapes Jaljira Juice",
+    tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+  },
+  {
+    date: "September 14, 2021",
+    title: "Pineapple Jaljira Drink",
+    tags: ["Breakfast Recipes", "Festive Recipes", "Jaljira", "Quick Recipes"]
+  },
+  {
+    date: "July 20, 2021",
+    title: "Rajma Masala",
+    tags: ["Dinner Recipes", "Lunch Recipes", "Rajma Masala"]
+  },
+  {
+    date: "July 20, 2021",
+    title: "Shahi Paneer Masala",
+    tags: ["Dinner Recipes", "Festive Recipes", "Lunch Recipes", "Shahi Paneer Masala"]
+  },
+  {
+    date: "July 20, 2021",
+    title: "Sambhar",
+    tags: ["Breakfast Recipes", "Dinner Recipes", "Lunch Recipes", "Sambhar Masala"]
+  },
+  {
+    date: "July 20, 2021",
+    title: "Aloo Gobhi Sabji",
+    tags: ["Dinner Recipes", "Garam Masala", "Lunch Recipes"]
+  }
+];
