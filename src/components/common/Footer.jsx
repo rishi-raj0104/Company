@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Newsletter Section */}
           <div className="mb-8 md:mb-0 md:mr-12">
           <div class="flex flex-col md:flex-col lg:flex-row items-center gap-y-4 lg:gap-x-8 p-4">
-            <img src="/src/assets/dbc_footer.jpg" alt="DilBahar Masala" class="h-20 w-auto" />
+           <img src={DBC} alt="DilBahar Masala" class="h-20 w-auto" />
             <span class="text-base font-sans text-left max-w-[22rem] leading-relaxed">
               Subscribe to our newsletter for the latest updates on new features and product releases.
             </span>
