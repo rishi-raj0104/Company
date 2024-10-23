@@ -123,13 +123,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center mt-8">
-          <span className="text-sm text-gray-600">
+        <div className="text-center mt-8 flex flex-col items-center">
+          <span className="text-sm text-gray-600 mb-2">
             &copy; {new Date().getFullYear()} Dil Bahar Masala. All Rights Reserved.
           </span>
-          <span className="text-sm text-gray-600">
-            Made By Rishi Raj
-          </span>
+          <a 
+            href="https://www.linkedin.com/in/rishi-raj0104/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-blue-500 transition-colors duration-300"
+          >
+            <span className="text-sm">
+              Made By Rishi Raj ❤️
+            </span>
+          </a>
         </div>
       </div>
     </footer>
