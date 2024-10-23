@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product/:id" element={<ProductDetail/>} />
         <Route path="/recipes/:id" element={<RecipieDetail/>} />
-        <Route path="/category/:id" element={<CategoryDetail/>} />
+        <Route path="/category/:category" element={<CategoryDetail/>} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer/>
