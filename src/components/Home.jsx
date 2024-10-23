@@ -139,7 +139,8 @@ const Home = () => {
                 Discover a world of flavors with our premium spice blends.
               </p>
             </div>
-            <button className="bg-blue-500 text-white p-2 md:p-4 py-2 rounded-lg hover:bg-pink-600 transition duration-200">
+            <button className="bg-blue-500 text-white p-2 md:p-4 py-2 rounded-lg hover:bg-pink-600 transition duration-200" 
+            onClick={() => alert('Added to cart!')}>
               Shop Now
             </button>
           </div>
