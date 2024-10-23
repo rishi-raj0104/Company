@@ -56,7 +56,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Links */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center space-y-4 text-gray-700 p-4 bg-white absolute top-16 left-0 right-0 shadow-lg">
+        <ul className="md:hidden flex flex-col items-center space-y-4 text-gray-700 p-4 bg-white absolute top-16 left-0 right-0 shadow-lg z-50">
           <li><NavLink to="/" onClick={toggleMenu}>Home</NavLink></li>
           <li><NavLink to="/products" onClick={toggleMenu}>Products</NavLink></li>
           <li><NavLink to="/recipes" onClick={toggleMenu}>Recipes</NavLink></li>
