@@ -90,7 +90,7 @@ const Home = () => {
         <div className="bg-gray-100 p-6 md:p-12 rounded-lg">
           <div className="flex flex-col md:flex-row gap-4">
             {/* Left Image Container */}
-            <div class="relative w-full md:w-1/2 h-48 md:h-1/2 flex justify-center items-center mb-10 md:mb-0">
+            <div className="relative w-full md:w-1/2 h-48 md:h-1/2 flex justify-center items-center mb-10 md:mb-0">
               <div className="absolute inset-0 bg-white shadow-lg transform translate-x-4 translate-y-4 rounded-lg z-0"></div>
               <img
                 alt="Current Spice Selection"

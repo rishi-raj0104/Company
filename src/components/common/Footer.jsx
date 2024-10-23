@@ -2,6 +2,9 @@ import React from 'react';
 import logo from '../../assets/Loogoo1.webp';
 import DBC from '../../assets/dbc_footer.jpg';
 import { Link } from 'react-router-dom';
+const handleScrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-10">
@@ -9,9 +12,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row lg:space-x-32">
           {/* Newsletter Section */}
           <div className="mb-8 md:mb-0 md:mr-12">
-          <div class="flex flex-col md:flex-col lg:flex-row items-center gap-y-4 lg:gap-x-8 p-4">
-          <img src={DBC} alt="DilBahar Masala" class="h-20 w-auto" />
-            <span class="text-base font-sans text-left max-w-[22rem] leading-relaxed">
+          <div className="flex flex-col md:flex-col lg:flex-row items-center gap-y-4 lg:gap-x-8 p-4">
+          <img src={DBC} alt="DilBahar Masala" className="h-20 w-auto" />
+            <span className="text-base font-sans text-left max-w-[22rem] leading-relaxed">
               Subscribe to our newsletter for the latest updates on new features and product releases.
             </span>
           </div>
@@ -37,23 +40,23 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="flex flex-col lg:space-x-16 md:flex-row space-x-2   ">
+          <div className="flex flex-col lg:space-x-16 md:flex-row  ">
             <div className="mb-4 md:mb-0">
               <strong className="text-lg font-bold mb-2">Company</strong>
               <div className="flex flex-col space-y-1">
-                <Link to="/" className="text-sm text-gray-700 hover:underline">
+                <Link to="/" className="text-sm text-gray-700 hover:underline" onClick={handleScrollToTop}>
                   Home
                 </Link>
-                <Link to="/products" className="text-sm text-gray-700 hover:underline">
+                <Link to="/products" className="text-sm text-gray-700 hover:underline" onClick={handleScrollToTop}>
                   Products
                 </Link>
-                <Link to="/recipes" className="text-sm text-gray-700 hover:underline">
+                <Link to="/recipes" className="text-sm text-gray-700 hover:underline" onClick={handleScrollToTop}>
                   Recipes
                 </Link>
-                <Link to="/about" className="text-sm text-gray-700 hover:underline">
+                <Link to="/about" className="text-sm text-gray-700 hover:underline" onClick={handleScrollToTop}>
                   About
                 </Link>
-                <Link to="/contact" className="text-sm text-gray-700 hover:underline">
+                <Link to="/contact" className="text-sm text-gray-700 hover:underline" onClick={handleScrollToTop}>
                   Contact
                 </Link>
               </div>

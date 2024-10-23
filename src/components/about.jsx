@@ -1,6 +1,6 @@
 import React from 'react';
-import sitamarhiImage from '../assets/masala_banner.jpg'; // Replace with your image path
-import shopImage from '../assets/masala_banner.jpg'; // Replace with your shop image path
+import sitamarhiImage from '../assets/masala_banner.jpg'; 
+import shopImage from '../assets/masala_banner.jpg'; 
 
 const About = () => {
   return (
