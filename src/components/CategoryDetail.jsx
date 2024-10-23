@@ -7,6 +7,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const Recipe = () => {
   const { category } = useParams();
+  alert(category);
   const flatRecipes = Object.entries(recipesarr)
   .flatMap(([categoryName, recipes]) => 
     recipes.map(recipe => ({ ...recipe, category: categoryName }))
