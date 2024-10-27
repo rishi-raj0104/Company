@@ -78,7 +78,6 @@ const Home = () => {
                 src={image}
                 alt={`Masala ${index + 1}`}
                 className="rounded-lg w-full h-48 md:h-60 object-cover hover:scale-110 transform transition-transform duration-300 ease-in-out"
-                onClick={() => changeImage(image, index)}
               />
             </div>
           ))}
